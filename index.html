@@ -6,341 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Source+Sans+Pro:300,400,700" rel="stylesheet">
     <script src="https://use.fontawesome.com/9517cbebec.js"></script>
-<style>
-body,h1,h2,h3,h4,h5,h6{font-family:'Roboto'}
-p{font-size:18px;}
-/*****************************/
-/*        Menu Styles        */
-/*****************************/
-	.navbar-default {
-	  background-color: #000;
-	  border:0;
-	  height:74px;
-	}
-
-	.navbar-default .navbar-nav>li>a { 
-		font-weight:100;
-		color: #fff;
-	}
-	.navbar{ margin-bottom:0; }
-	.navbar-brand { padding:18px 0 0 0; }
-	.navbar-brand img{width:100%}
-/*===================*/
-
-	@media(max-width:767px){ 
-	  .navbar-default {
-	    height:60px;
-	  }
-	  .navbar-toggle {    
-	    border-radius:0;
-	    height: 60px;
-	    border: 0;
-	    margin:0
-	  }
-
-		.navbar-default .navbar-toggle .icon-bar {
-    		height: 3px;
-  			background-color: #fff;
-		}
-
-		.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-		    background-color: #00aeef;
-		}
-
-	.navbar-brand {
-	  	width:400px;
-	  	padding:13px 0 0 0; 
-	  	margin-left: 10px;
-	}
-	#search_desktop{ display:none; }
-	#search_m{
-	    height: 60px;
-	    float: right;
-	    background: ;
-	    font-size: 20px;
-	    padding: 15px 20px;
-	    color: #fff;
-	    width: 60px;
-	    cursor:pointer;
-	}
-
-	  .container > .navbar-collapse{
-	    background:#999; 
-	    width:240px;
-	    float:right
-	  }
-
-	  .navbar-default .navbar-nav{
-	    margin-top:0;
-	    margin-bottom:0;
-	    border-left:1px solid #000; 
-	    margin-right:1px solid #000;
-	  }
-
-	  .navbar-default .navbar-nav>li>a{
-	    color:#fff;
-	    font-size:14px; 
-	    border-bottom:1px solid #fff; 
-	    background:#000;
-	  }
-
-
-	  .navbar-default .navbar-nav>.open>a, 
-	  .navbar-default .navbar-nav>.open>a:focus, 
-	  .navbar-default .navbar-nav>.open>a:hover {
-	    background-color: #00aeef; 
-	    border:0;
-	  }
-
-	  .nav .open > a, 
-	  .nav .open > a:focus, 
-	  .nav .open > a:hover { 
-	    border-color: initial; 
-	  }
-
-	  .navbar-nav .open .dropdown-menu{ 
-	    background:#fff; 
-	    padding:0;
-	  }
-	  .dropdown-menu>li>a { 
-	    white-space: normal;
-	    color:#000; 
-	    border-bottom:1px solid;
-	  }
-	}/*===================*/
-
-	@media(max-width:480px){
-		.container > .navbar-collapse {
-	    	width: calc(100% + 30px);
-	    	float:none;
-			margin:;
-		}
-	 
-		.navbar-header{margin:0!important}
-		.navbar-brand {
-		    width: 100%;
-			height:100%;
-		    padding: 12px 0 10px 0;
-		    margin-left: 0px;
-			margin-right:0px
-		}
-
-		#search_m{height:100%;width:initial; margin-right: -15px; padding: 13px 16px; }
-
-		.navbar-default {
-		    height: 100%;
-		}
-
-		.navbar-toggle {
-			padding-top: 20px;
-			padding-bottom: 20px;
-		    height: 100%;
-		}
-
-
-	}/*===================*/
-
-
-	@media (min-width: 768px) {
-		.container { 
-			width: 100%; 
-		}
-
-		.navbar-default {
-		    height: 50px;
-		}
-		#search_m{display:none;}
-		#search_desktop {
-		    float: right;
-		    height: ;
-		    background: ;
-		    font-size: 20px;
-		    padding: 11px 16px;
-		    color: #fff;
-		    width: 50px;
-			margin-right:-15px;
-		}
-
-		.navbar-collapse { float: right; }
-		.navbar>.container .navbar-brand{ width:200px; margin-left:-5px;}
-		.navbar-right { margin-right: 0; }
-		.navbar-nav > li > .dropdown-menu{ padding:0; border-radius:0; }
-		.navbar-default .navbar-nav>li>a { 
-			/*font-family:'Roboto'; */
-			font-weight:100;
-		    font-size: 14px;
-  			padding:19px 6px 11px;
-		    color: #fff;
-		}
-
-		.navbar-default .navbar-nav > li > a:focus, 
-		.navbar-default .navbar-nav > li > a:hover {
-		    color: #fff;
-		    background-color: #00aeef;
-		}
-
-		.navbar-default .navbar-nav>.open>a, 
-		.navbar-default .navbar-nav>.open>a:focus, 
-		.navbar-default .navbar-nav>.open>a:hover {
-		    color: #fff;
-		    background-color: transparent;
-		}
-
-		.dropdown-menu>li>a{
-		    padding: 12px;
-		    border:1px solid #000;
-		    margin-top:-1px
-		}
-
-		.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-		    color: #00aeef;
-		    background-color: #000;
-		}
-	}
-
-
-	@media (min-width: 992px){
-		.container { 
-			width: 100%; 
-		}
-		.navbar>.container .navbar-brand {
-		    width: 280px;
-		}
-
-		.navbar-default .navbar-nav>li>a {
-		    font-size: 16px;
-		    padding: 19px 7px 11px;
-		}
-	}
-
-	@media (min-width: 1200px){
-		.container {
-    		width: 1170px;
-		}
-	}
-
-	@media (min-width: 1500px) {
-	  .container {
-	    width: 1470px;
-	  }
-	}
-
-
-	@media (min-width: 1920px) {
-	  .container {
-	    width: 1890px;
-	  }
-	}
-/**************  End Menu Styles  **************/
-
-/***********************************/
-/*          Body Styles            */
-/***********************************/
-@media (min-width: 768px) {
-#vid_hero{text-transform: uppercase;background: rgba(61,167,251,.5); color:#fff; 
-	/*font-family:'Roboto'; */
-}
-#vid_hero h2{font-size:32px; font-weight:900;
-	/*font-family:'Roboto';*/
-}
-#vid_hero h3{font-size:; font-weight:700;}
-#vid_hero h3 span{font-size:; font-weight:400;
-/*font-family:'Roboto';*/
-}
-#vid_hero span{display:block}
-#vid_hero .txt{padding-left:0;}
-.hero_cta span{display:block; margin:10px 0; padding:10px 0;border-radius:5px;text-align:center;
-	/*font-family:'Roboto';*/
-font-size:18px;width:330px}
-
-.hero_cta .reserve{ background:#f15452; }
-.hero_cta .register{ background:#009483; } 
-
-#vid_hero { height: 400px; }
-#vid_content{ 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-margin-top:50px
-}
-
-video{
-position: relative;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    -webkit-transition: 1s opacity;
-    transition: 1s opacity;
-}
-
-#content1{ background:#fff;padding:8px 0 15px;}
-#content1 .title{ font-size:26px; font-weight:900;}
-#content1 .title span{ font-size:16px;display:block;font-style:italic}
-#content1 h3{ font-size:22px;font-weight:700}
-#content1 p{ font-family: 'Source Sans Pro', sans-serif; text-transform: uppercase;}
-#content1 span{ font-style:italic}
-
-#content2{background:#d5eef1;padding:10px 0 }
-#content2 h3{color:#159382;font-size:32px;font-weight:900;text-align:center;}
-#content2 p{font-weight:300}
-#content2 span{font-weight:800;text-align:center;}
-#content2 span p{font-weight:400;}
-
-#content3{text-align:center}
-#content3 h3{font-size:32px;color:#159382;font-weight:900}
-#content3 h3 i{color:#f15452}
-#content3 .row > div{font-size:32px;font-weight:900;max-width:500px;height:120px;}
-#content3 div span{display:block; font-size:18px; font-weight:500; margin:0 auto}
-
-#content4{ padding:0 0 20px 0; background:#d5eef1;}
-#content4 img{width:100%}
-#content4 .rt{padding:0 30px;}
-#content4 h3{text-align:center;font-weight:900;font-size:20px; color:#159382;margin-bottom:20px}
-#content4 .lt div{text-align:center; float:left }
-.buyers div, .booth div{min-height:90px;width:100%;margin-bottom:5px }
-#content4 .buyers img{width:55%}
-#content4 .booth img{ width:80% }
-
-#content5 img{width:100%; padding-top:40px}
-
-#content6{ background:#159382; text-align:center; padding-top:1px; padding-bottom:10px}
-#content6 h3{ color:#fff; font-size:32px; font-weight:400}
-#content6 h3 span{ font-weight:900}
-#content6 img{ width:100%}
-
-#content7{ text-transform:uppercase;padding-bottom:30px}
-#content7 h3{ text-align:center; font-size:32px;font-weight:900;margin-bottom:20px}
-#content7 .lt div:first-child span:first-child{ margin-bottom:-6px;}
-#content7 .lt div:first-child span{ white-space: nowrap;display:block;}
-#content7 .lt div:first-child{
-  padding:8px 18px;
-  background:#159382;
-  color:#fff;
-  font-size:24px;
-  font-weight:700;  
-  border-top-left-radius:8px;
-  border-top-right-radius:8px;
-}
-#content7 .lt ul{ padding-left:30px; }
-#content7 .lt div:last-child{
-  padding:15px 5px;  
-  background:#d5eef1;
-  border-bottom-left-radius:8px;
-  border-bottom-right-radius:8px;
-}
-
-
-footer{background:#eee;}
-footer span{display:block;}
-}
-</style>
+<link rel="stylesheet" href="test_home_assets/css/style.css">
 
 </head>
 
@@ -349,9 +15,18 @@ footer span{display:block;}
         <div class="container">
           <div class="navbar-header">
               <a class="navbar-brand" href="#"><img src="test_home_assets/img/ASD_Logo.png"></a>
-              <div id="search_m">
+<!--               <div id="search_m">
               	<i class="fa fa-search" aria-hidden="true"></i>
-              </div>
+              </div> -->
+	          <div id="search" class="mo">
+				   <form action="/info/search.shtml"> 
+				   <input type="text" value="Search" placeholder="Search" onclick="value=''" name="kw" id="s"> 
+					<button type="submit" value="" id="searchsubmit">
+					    <i class="fa fa-search"></i>
+					</button>
+					<span class="btn_sub"><i class="fa fa-search"></i></span>
+				   </form>
+	 		  </div>
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
@@ -361,16 +36,25 @@ footer span{display:block;}
           </div>
 
 
-          <div id="search_desktop">
-          	<i class="fa fa-search" aria-hidden="true"></i>
-          </div>
+<!--           <div id="search_desktop">
+          	<i class="fa fa-search"></i>
+          </div> -->
+          <div id="search" class="desk">
+			   <form action="/info/search.shtml"> 
+			   <input type="text" value="Search" placeholder="Search" onclick="value=''" name="kw" id="s"> 
+				<button type="submit" value="" id="searchsubmit">
+				    <i class="fa fa-search"></i>
+				</button>
+				<span class="btn_sub"><i class="fa fa-search"></i></span>
+			   </form>
+ 		  </div>
           <div id="navbar" class="navbar-collapse collapse">
 					  <ul class="nav navbar-nav navbar-right">
 
 					    <li class="dropdown"><a href="#about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT THE SHOW</a>
 					      <ul class="dropdown-menu">
-					        <li><a href="#">Show Overview</a></li>
-					        <li><a href="#">Product &amp; Buyer Categories</a></li>
+					        <li><a href="http://www.asdonline.com/lv/about/show-overview.shtml">Show Overview</a></li>
+					        <li><a href="http://www.asdonline.com/lv/about/product-categories.shtml">Product &amp; Buyer Categories</a></li>
 					        <li><a href="#">Photo &amp; Video</a></li>
 					        <li><a href="#">Contact Us</a></li>
 					      </ul>
@@ -420,10 +104,7 @@ footer span{display:block;}
 					  </ul>
 
 					</div><!--/.nav-collapse -->
-
-
-
-        </div>
+        </div>        
     </nav>
 
 
@@ -436,7 +117,7 @@ footer span{display:block;}
 
 
 <section id="vid_hero">
-	<video id="bgvid" playsinline autoplay muted loop>
+	<video id="bgvid" playsinline muted loop>
 	  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
 	<source src="test_home_assets/vid/ASD_Video.mp4" type="video/mp4">
 	</video>
@@ -459,8 +140,8 @@ footer span{display:block;}
 				</h3>
 
 				<div class="hero_cta">
-					<span class="reserve">Limited Space: Reserve Now</span>
-					<span class="register">Buyers: register here</span>
+					<a class="reserve" href="/lv/exhibitor/apply.shtml" class="btn-rnd" target="_self">Limited Space: Reserve Now</a>
+					<a class="register" href="https://registration.experientevent.com/ShowASD171/?marketingcode=WASD2" class="btn-rnd" target="_target">Buyers: register here</a>
 				<div>
 
 			</div>
@@ -476,70 +157,72 @@ footer span{display:block;}
 				“THE MOST PROFITABLE SHOW FOR US IN THE ENTIRE U.S.”
 				<span>—Michael Wang, New Spark Wholesale</span>
 			</div>
-			<div class="col-sm-6 lt">
-				<h3>EXHIBITORS</h3>
-				<p>
-					“So <b>different</b>…..didn’t expect 
-					so many <b>types of buyers</b> - international, 
-					distributors, and alternative wholesale 
-					buyers.”
-					<span>—Javier M., Love and Luck Greetings</span>
-				</p>
-				<p>
-					“We wrote <b>more orders</b> than we did 
-					in a show we have participated in 
-					for years. Great <b>way to find new 
-					buyers</b> that don’t attend other 
-					trade shows.”
-					<span>—William M., Mark Corporation</span>
-				</p>
-				<p>
-					“We do a lot of shows, and ASD is
-					the <b>best order-writing</b> show we 
-					participate in. Period”
-					<span>—Dave, H2W<span>
-				</p>
-				<p>
-					“Such a <b>wide variety of buyers</b> and 
-					products that the sales &amp; leads we 
-					garnered much exceeded our 
-					expectations.”
-					<span>—Jason L., Pinky Footwear</span>
-				</p>
-			</div>
-			<div class="col-sm-6 rt">
-				<h3>BUYERS</h3>
-				<p>
-					“70% of the sales in my store 
-					are from the ASD show.  It is 
-					the <b>best performing product</b> 
-					in my business!”
-					<span>—Brad J.,Treehouse Gift &amp; Home</span>
-				</p>
-				<p>
-					“ASD helps me find the right 
-					products at the right time 
-					and in the right environment. 
-					It’s all here and I don’t have 
-					to go anywhere else. ASD is my 
-					<b>one-stop-shop</b>!”
-					<span>—Manny L., Del Mar Fairgrounds</span>
-				</p>
-				<p>
-					“The diversity of products has 
-					helped us expand our business. 
-					From opportunity buys, household 
-					products, pet supplies, eyewear, 
-					candles, home furnishings, cosmetics, 
-					backpacks, toys, even Halloween 
-					merchandise – we <b>cannot miss</b> this show!”
-					<span>—Jim P., Sourcing Edge</span>
-				</p>
-				<p>
-					“Merchandise from ASD keeps my 
-					<b>customers coming back</b> for more.”
-					<span>—Sharon F., EG LLC</span>
-				</p>
+			<div class="bg col-md-12 clearfix">
+				<div class="col-sm-6 col-lg-5 col-lg-offset-1 lt">
+					<h3>EXHIBITORS</h3>
+					<p>
+						“So <b>different</b>…..didn’t expect 
+						so many <b>types of buyers</b> - international, 
+						distributors, and alternative wholesale 
+						buyers.”
+						<span>—Javier M., Love and Luck Greetings</span>
+					</p>
+					<p>
+						“We wrote <b>more orders</b> than we did 
+						in a show we have participated in 
+						for years. Great <b>way to find new 
+						buyers</b> that don’t attend other 
+						trade shows.”
+						<span>—William M., Mark Corporation</span>
+					</p>
+					<p>
+						“We do a lot of shows, and ASD is
+						the <b>best order-writing</b> show we 
+						participate in. Period”
+						<span>—Dave, H2W<span>
+					</p>
+					<p>
+						“Such a <b>wide variety of buyers</b> and 
+						products that the sales &amp; leads we 
+						garnered much exceeded our 
+						expectations.”
+						<span>—Jason L., Pinky Footwear</span>
+					</p>
+				</div>
+				<div class="col-sm-6 col-lg-5 rt">
+					<h3>BUYERS</h3>
+					<p>
+						“70% of the sales in my store 
+						are from the ASD show.  It is 
+						the <b>best performing product</b> 
+						in my business!”
+						<span>—Brad J.,Treehouse Gift &amp; Home</span>
+					</p>
+					<p>
+						“ASD helps me find the right 
+						products at the right time 
+						and in the right environment. 
+						It’s all here and I don’t have 
+						to go anywhere else. ASD is my 
+						<b>one-stop-shop</b>!”
+						<span>—Manny L., Del Mar Fairgrounds</span>
+					</p>
+					<p>
+						“The <b>diversity of products</b> has 
+						helped us expand our business. 
+						From opportunity buys, household 
+						products, pet supplies, eyewear, 
+						candles, home furnishings, cosmetics, 
+						backpacks, toys, even Halloween 
+						merchandise – we <b>cannot miss</b> this show!”
+						<span>—Jim P., Sourcing Edge</span>
+					</p>
+					<p>
+						“Merchandise from ASD keeps my 
+						<b>customers coming back</b> for more.”
+						<span>—Sharon F., EG LLC</span>
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -569,22 +252,22 @@ footer span{display:block;}
 	<div class="container">
 		<div class="row">
 			<h3>WHY VENDORS <i class="fa fa-heart" aria-hidden="true"></i> ASD</h3>
-			<div class="col-sm-4">
+			<div class="col-sm-4 col-xs-6">
 				45,000+<span>TOTAL ATTENDEES</span>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 col-xs-6">
 				45%<span>YEAR OVER YEAR<br> INCREASE IN VIP BUYERS</span>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 col-xs-6">
 				2,720<span>EXHIBITING COMPANIES</span>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 col-xs-6">
 				96%<span>OF ATTENDEES ARE<br> PRIMARY DECISION MAKERS</span>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 col-xs-6">
 				92<span>COUNTRIES ATTENDING</span>
 			</div>
-			<div class="col-sm-4 ">
+			<div class="col-sm-4 col-xs-6 ">
 				55<span>YEARS IN BUSINESS</span>
 			</div>
 		</div>
@@ -595,9 +278,9 @@ footer span{display:block;}
 <section id="content4">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-7 lt">
+			<div class="col-sm-7 lt clearfix">
 				<h3>HIGHLIGHTS</h3>
-				<div class="buyers col-sm-6">
+				<div class="buyers col-xs-6">
 					<div>
 						<img src="test_home_assets/img/buyers_icon.png">
 					</div>
@@ -608,7 +291,7 @@ footer span{display:block;}
 						the last 3 years
 					</p>
 				</div>
-				<div class="booth col-sm-6">
+				<div class="booth col-xs-6">
 					<div>
 						<img src="test_home_assets/img/booth_icon.png">
 					</div>
@@ -665,7 +348,7 @@ footer span{display:block;}
 				</div>
 			</div>
 			<div class="col-sm-6 rt">
-				<div>BONUS: BOOK EARLY TO GET THE ASD ROI SUCCESS PACK (a $4,797 value)</div>
+				<div>BONUS: BOOK EARLY TO GET THE ASD ROI SUCCESS PACK <span>(a $4,797 value)</span></div>
 				<div>
 					<ul>
 						<li>Exhibitor Success Webinars</li>
@@ -676,7 +359,7 @@ footer span{display:block;}
 						<li>“Ask the Expert” – live from veteran trade show guru Jefferson Davis</li>
 					</ul>
 				</div>
-				<div>I’m ready, let’s do this!</div>
+				<div><a href="/lv/exhibitor/apply.shtml" class="btn-rnd" target="_self">I’m ready, let’s do this!</a></div>
 			</div>
 		</div>
 		</div>
@@ -688,8 +371,10 @@ footer span{display:block;}
 <footer>
 	<div class="container">
 		<div class="row">
-			<span>&copy; 2016 EMERALD EXPOSITIONS, LLC. ALL RIGHTS RESERVED.</span>
-			<a href="#">ABOUT US</a> | <a href="#">CONTACT US</a> | <a href="#">TERMS OF USE</a> | <a href="#">PRIVACY POLICY</a> | <a href="#">VIDEO/PHOTO POLICY</a>
+			<div class="col-md-12">
+				<span>&copy; 2016 EMERALD EXPOSITIONS, LLC. ALL RIGHTS RESERVED.</span>
+				<a href="#">ABOUT US</a> | <a href="#">CONTACT US</a> | <a href="#">TERMS OF USE</a> | <a href="#">PRIVACY POLICY</a> | <a href="#">VIDEO/PHOTO POLICY</a>
+			</div>
 		</div>
 	</div>
 </footer>
@@ -729,6 +414,37 @@ footer span{display:block;}
 		    checkWidth();
 		    // Bind event listener
 		    $(window).resize(checkWidth);
+
+		    $('.desk .btn_sub').click(function(){
+				$('.desk #s').css('display', 'block');
+				$('.desk .btn_sub').css('display', 'none');
+				$('.desk #searchsubmit').css('display', 'block');
+			});
+
+			$('.mo .btn_sub').click(function(){
+				$('.mo #s').css('display', 'block');
+				$('.mo .btn_sub').css('display', 'none');
+				$('.mo #searchsubmit').css('display', 'block');
+			});
+					
+     		$(document).click(function(event) { 
+			    if(!$(event.target).closest('input#s').length && !$(event.target).closest('.btn_sub').length) {
+			        if($('.mo input#s').is(":visible")) {
+			            $('.mo input#s').hide();
+						$('.mo #searchsubmit').css('display', 'none');
+			            $('.mo .btn_sub').css('display', 'block');
+			        }else{
+			        	if($('.desk input#s').is(":visible")) {
+			            $('.desk input#s').hide();
+						$('.desk #searchsubmit').css('display', 'none');
+			            $('.desk .btn_sub').css('display', 'block');
+			        }
+			        }
+			    }        
+			});
+			
+
+
 		});
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
