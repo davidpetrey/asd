@@ -220,7 +220,7 @@ p{font-size:18px;}
 		.navbar-default .navbar-nav>.open>a:focus, 
 		.navbar-default .navbar-nav>.open>a:hover {
 		    color: #fff;
-		    background-color: transparent;
+		    background-color: #00aeef;
 		}
 
 		.dropdown-menu>li>a{
@@ -276,7 +276,8 @@ p{font-size:18px;}
 
 .hero_cta a{color:#fff; }
 a:hover{text-decoration:none;}
-
+body{background:#000;}
+#content3, #content5, #content7{background:#fff;}
 @media (min-width: 768px) {
 	#vid_hero{text-transform: uppercase;background: rgba(61,167,251,.5); color:#fff; overflow: hidden; width:100%;}
 	#vid_hero h2{font-size:32px; font-weight:900;}
