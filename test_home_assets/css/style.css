@@ -278,6 +278,10 @@ p{font-size:18px;}
 a:hover{text-decoration:none;}
 body{background:#000;}
 #content3, #content5, #content7{background:#fff;}
+.hero_cta .reserve:hover{ background: #bd3f3e; }
+.hero_cta .register:hover{ background: #007366; }
+#content7 .rt a:hover{ background: #bd3f3e; }
+
 @media (min-width: 768px) {
 	#vid_hero{text-transform: uppercase;background: rgba(61,167,251,.5); color:#fff; overflow: hidden; width:100%;}
 	#vid_hero h2{font-size:32px; font-weight:900;}
