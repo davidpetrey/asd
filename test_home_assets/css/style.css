@@ -284,7 +284,8 @@ body{background:#000;}
 
 @media (min-width: 768px) {
 	#vid_hero{text-transform: uppercase;background: rgba(61,167,251,.5); color:#fff; overflow: hidden; width:100%;}
-	#vid_hero h2{font-size:32px; font-weight:900;}
+	#vid_hero h2{font-size:32px;margin-top:15px; font-weight:900;}
+	#vid_hero h2 span{line-height:1.1em}
 	#vid_hero h3{font-size:; font-weight:700;}
 	#vid_hero h3 span{font-size:; font-weight:400;}
 	#vid_hero span{display:block}
@@ -399,8 +400,10 @@ body{background:#000;}
 	#vid_hero {
 	    height: 720px;
 	}
-	#vid_hero h2 { font-size: 69px; margin-bottom:30px }
-	#vid_hero h3 {font-size:42px; margin-bottom:80px}
+	#vid_hero h2 { font-size: 69px;margin-top:10px; margin-bottom:30px }
+	#vid_hero h3 {font-size:42px; margin-bottom:70px}
+	#vid_hero h2 span{line-height:1.1em}
+
 	#vid_hero .txt{padding-right:0;}
 	.hero_cta a {font-size:32px;width:560px}
 
@@ -438,11 +441,10 @@ body{background:#000;}
 /***************************************************************/
 @media(max-width:767px){
 	#vid_hero{text-transform: uppercase;background: rgba(61,167,251,.5); color:#fff; overflow: hidden;}
-	#vid_hero h2{font-size:32px; font-weight:900;}
+	#vid_hero h2{font-size:32px; font-weight:900; margin-top:15px}
 	#vid_hero h3{font-size:; font-weight:700;}
-	#vid_hero h3 span{font-size:; font-weight:400;
-	/*font-family:'Roboto';*/
-	}
+	#vid_hero h2 span{line-height:1.1em}
+	#vid_hero h3 span{font-size:; font-weight:400;}
 	#vid_hero span{display:block}
 	#vid_hero .txt{padding-left:0;float:right; padding-top:20px;}
 	.hero_cta a{display:block; margin:10px 0; padding:10px 0; border-radius:5px; text-align:center; font-size:18px; width:330px }
