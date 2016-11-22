@@ -424,6 +424,7 @@ footer a{ color:#000; }
 	}
 	#vid_hero h2 { font-size: 69px; margin-bottom:30px }
 	#vid_hero h3 {font-size:42px; margin-bottom:80px}
+	#vid_hero .txt{padding-right:0;}
 	.hero_cta a {font-size:32px;width:560px}
 
 	#content1 .title { font-size: 50px;margin:20px 0 40px 0}
