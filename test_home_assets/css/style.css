@@ -306,20 +306,13 @@ p{font-size:18px;}
 a:hover{text-decoration:none;}
 
 @media (min-width: 768px) {
-#vid_hero{text-transform: uppercase;background: rgba(61,167,251,.5); color:#fff; overflow: hidden;
-	/*font-family:'Roboto'; */
-}
-#vid_hero h2{font-size:32px; font-weight:900;
-	/*font-family:'Roboto';*/
-}
+#vid_hero{text-transform: uppercase;background: rgba(61,167,251,.5); color:#fff; overflow: hidden; width:100%;}
+#vid_hero h2{font-size:32px; font-weight:900;}
 #vid_hero h3{font-size:; font-weight:700;}
-#vid_hero h3 span{font-size:; font-weight:400;
-/*font-family:'Roboto';*/
-}
+#vid_hero h3 span{font-size:; font-weight:400;}
 #vid_hero span{display:block}
 #vid_hero .txt{padding-left:0;padding-top: 20px;}
 .hero_cta a{display:block; margin:10px 0; padding:10px 0;border-radius:5px;text-align:center; font-size:18px;width:330px}
-
 .hero_cta .reserve{ background:#f15452; }
 .hero_cta .register{ background:#009483; } 
 
