@@ -6,7 +6,7 @@ p{font-size:18px;}
 	.navbar-default {
 	  background-color: #000;
 	  border:0;
-	  height:74px;
+	  /*height:74px;*/
 	}
 
 	.navbar-default .navbar-nav>li>a { 
@@ -14,13 +14,14 @@ p{font-size:18px;}
 		color: #fff;
 	}
 	.navbar{ margin-bottom:0; }
-	.navbar-brand { padding:15px 0 0 0; }
+	.navbar-brand { padding:15px 0 0 0; height: initial; }
 	.navbar-brand img{width:100%}
+	.navbar .container{width:100%}
 /*===================*/
 
 	@media(max-width:767px){ 
 	  .navbar-default {
-	    height:60px;
+	    /*height:60px;*/
 	  }
 	  .navbar-toggle {    
 	    border-radius:0;
@@ -167,8 +168,8 @@ p{font-size:18px;}
 
 
 	@media (min-width: 768px) {
-		.container { width: 100%; }
-		.navbar-default { height: 50px; }
+		/*.container { width: 100%; }*/
+		/*.navbar-default { height: 50px; }*/
 
 		#search.mo{display:none;}
 		#search.desk{
@@ -200,7 +201,7 @@ p{font-size:18px;}
 		.desk .btn_sub:hover{background-color: #00aeef;}
 
 		.navbar-collapse { float: right; }
-		.navbar>.container .navbar-brand{ width:200px; margin-left:-5px;}
+		.navbar>.container .navbar-brand{ width:200px; margin-left:-5px; padding: 18px 0 0 0;}
 		.navbar-right { margin-right: 0; }
 		.navbar-nav > li > .dropdown-menu{ padding:0; border-radius:0; }
 		.navbar-default .navbar-nav>li>a { 
@@ -238,36 +239,51 @@ p{font-size:18px;}
 
 	@media (min-width: 992px){
 		.container { 
-			width: 100%; 
+			/*width: 100%; */
 		}
 		.navbar>.container .navbar-brand {
 		    width: 280px;
+		    padding: 15px 0 0 0;
 		}
 
 		.navbar-default .navbar-nav>li>a {
 		    font-size: 16px;
-		    padding: 19px 7px 11px;
+		    padding: 19px 10px 11px;
 		}
 	}
 
 	@media (min-width: 1200px){
-		.container {
-    		width: 1170px;
+		/*.container { width: 1170px; }*/
+		.navbar > .container .navbar-brand {
+			width: 300px;  
+			padding: 20px 0;
 		}
+		.navbar-default .navbar-nav>li>a {
+			font-size: 16px;
+			padding: 25px 18px 20px;
+		}
+		.dropdown-menu>li>a{font-size:16px}
+		.desk .btn_sub{font-size: 20px; padding: 18px 20px 19px;  width: initial;}
 	}
 
 	@media (min-width: 1500px) {
-	  .container {
-	    width: 1470px;
-	  }
+		.container {width: 1470px;}
+		.navbar > .container .navbar-brand { width: 400px; padding: 20px 0; }
+		.navbar-default .navbar-nav>li>a { font-size: 20px; padding: 29px 22px 23px; }
+		.dropdown-menu>li>a{font-size:20px}
+		.desk .btn_sub{font-size: 24px;padding: 19px 22px; width: initial;}
 	}
 
 
-	@media (min-width: 1920px) {
-	  .container {
-	    width: 1890px;
-	  }
+	@media (min-width: 1800px) {  
+		.navbar > .container .navbar-brand { width: 450px; }
+		.navbar-default .navbar-nav>li>a { font-size: 24px; padding: 32px 25px 23px; }
+		.dropdown-menu>li>a{font-size:24px}
+		.desk .btn_sub{font-size: 24px;padding: 21px 25px; width: initial;}
 	}
+
+
+
 /**************  End Menu Styles  **************/
 
 /***********************************/
@@ -278,9 +294,11 @@ p{font-size:18px;}
 a:hover{text-decoration:none;}
 body{background:#000;}
 #content3, #content5, #content7{background:#fff;}
-.hero_cta .reserve:hover{ background: #bd3f3e; }
-.hero_cta .register:hover{ background: #007366; }
-#content7 .rt a:hover{ background: #bd3f3e; }
+.hero_cta .reserve:hover,
+.hero_cta .register:hover,
+#content7 .rt a:hover{ background: #000; }
+#content1 .title { margin: 0 auto; }
+#content1 .title span { padding-left: 20px; }
 
 @media (min-width: 768px) {
 	#vid_hero{text-transform: uppercase;background: rgba(61,167,251,.5); color:#fff; overflow: hidden; width:100%;}
@@ -320,7 +338,7 @@ body{background:#000;}
 
 	#content1{ background:#fff;padding:8px 0 15px;}
 	#content1 .bg{ background: url('../img/dialog_bg.png') 50% / contain no-repeat; }
-	#content1 .title{ font-size:26px; font-weight:900;}
+	#content1 .title{ font-size:26px; font-weight:900; max-width: 722px;}
 	#content1 .title span{ font-size:16px;display:block;font-style:italic}
 	#content1 h3{ font-size:22px;font-weight:700}
 	#content1 p{ font-family: 'Source Sans Pro', sans-serif; text-transform: uppercase;}
@@ -390,10 +408,19 @@ body{background:#000;}
 	footer a{ color:#000; }
 }
 
+@media (min-width: 992px) {
+	#content1 .title {
+    	max-width: 892px;
+    	font-size: 32px;
+    }
+}
+
 
 @media (min-width: 1200px) {
 	#content1 .title {
-    	font-size: 38px; }
+		max-width: 1140px;
+    	font-size: 41px;
+    }
 }
 
 @media (min-width: 1500px) {
@@ -404,10 +431,10 @@ body{background:#000;}
 	#vid_hero h3 {font-size:42px; margin-bottom:50px}
 	#vid_hero h2 span{line-height:1.1em}
 
-	#vid_hero .txt{padding-right:0;}
+	#vid_hero .txt{padding-right:0;padding-top: 40px;}
 	.hero_cta a {font-size:32px;width:560px}
 
-	#content1 .title { font-size: 50px;margin:20px 0 40px 0}
+	#content1 .title { font-size: 50px; max-width: 1390px; margin-top:20px; margin-bottom:40px;}
 	#content1 .title span{ font-size: 32px; }
 	#content1 h3 { font-size: 36px;margin-bottom:20px;}
 	#content1 p { font-size: 26px;margin-bottom:25px;}
@@ -422,7 +449,7 @@ body{background:#000;}
 	#content4 h3{ font-size:42px;}
 	.booth p, .buyers p{ font-weight:500;font-size:38px; line-height:40px}
 
-	#content6 h3{font-size:60px}
+	#content6 h3{font-size:60px; margin: 40px 0 20px; }
 
 	#content7 h3{font-size:50px}
 	#content7 .lt div:first-child{font-size:42px}
@@ -434,6 +461,17 @@ body{background:#000;}
 	footer span { display: inline-block; padding-right:80px }
 }
 
+
+	@media (min-width: 1800px) {  
+		#content1 .title {max-width: 1670px;}
+		#content1 .title,
+		#content2 h3,
+		#content3 h3,
+		#content7 h3{ font-size: 60px; margin-top:40px}
+
+		#content3 .row > div{font-size:60px;line-height: 55px; height: 160px;}
+		#content3 .row > div span{font-size:32px; line-height: 40px;}
+	}
 
 
 
@@ -477,9 +515,9 @@ body{background:#000;}
 
 	#content1{ background:#fff;padding:8px 0 15px;}
 	#content1 .bg{ background:#fff url('../img/dialog_bg.png') 50% 20% / 80% no-repeat; }
-	#content1 .title{ font-size:26px; font-weight:900;}
+	#content1 .title{ font-size:26px; font-weight:900;padding:0 15px;}
 	#content1 .title span{ font-size:16px;display:block;font-style:italic}
-	#content1 h3{ font-size:22px;font-weight:700}
+	#content1 h3{ font-size:22px;font-weight:700; margin-bottom:-12px;}
 	#content1 p{ font-family: 'Source Sans Pro', sans-serif; text-transform: uppercase;margin-bottom:20px;}
 	#content1 span{ font-style:italic; display:block;}
 
