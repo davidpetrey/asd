@@ -475,7 +475,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 			ver = iOSversion();
 
-			if (ver[0] <= 10) {
+			if (ver[0] < 10) {
 				alert('This is running iOS '+ver);
 				$('#vid_hero').prepend('<div id="img_hero"></div>');
 				$('#bgvid').css('display', 'none');
