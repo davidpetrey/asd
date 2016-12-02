@@ -142,6 +142,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<source src="test_home_assets/vid/ASD_Video.mp4" type="video/mp4">
 	</video>
 
+
 <div id="vid_content">
 	<div class="container">
 		<div class="row">
@@ -405,6 +406,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <script>
 		$(document).ready(function() {
+				$('#vid_hero').prepend('<div id="img_hero"></div>');
+				$('#bgvid').css('display', 'none');
 			// Dropdown on hover
 		    function checkWidth() {
 	        var windowSize = $(window).width();
@@ -463,7 +466,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			    }        
 			});
 			
+			function iOSversion() {
+				if (/iP(hone|od|ad)/.test(navigator.platform)) {
+					var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+					return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+				}
+			}
 
+			ver = iOSversion();
+
+			if (ver[0] <= 10) {
+				alert('This is running iOS '+ver);
+				$('#vid_hero').prepend('<div id="img_hero"></div>');
+				$('#bgvid').css('display', 'none');
+			}
 
 		});
     </script>

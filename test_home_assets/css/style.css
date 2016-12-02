@@ -289,7 +289,7 @@ p{font-size:18px;}
 /***********************************/
 /*          Body Styles            */
 /***********************************/
-
+#img_hero{ background: url('../img/vidbb.jpg') 0 / cover no-repeat; height:400px;   }
 .hero_cta a{color:#fff; }
 a:hover{text-decoration:none;}
 body{background:#000;}
