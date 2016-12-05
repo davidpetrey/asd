@@ -129,16 +129,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-
-
-
-
-
-
-
 <section id="vid_hero">
 	<video id="bgvid" playsinline autoplay muted loop>
-	  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
 	<source src="test_home_assets/vid/ASD_Video.mp4" type="video/mp4">
 	</video>
 
@@ -406,8 +398,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <script>
 		$(document).ready(function() {
-				//$('#vid_hero').prepend('<div id="img_hero"></div>');
-				//$('#bgvid').css('display', 'none');
 			// Dropdown on hover
 		    function checkWidth() {
 	        var windowSize = $(window).width();
@@ -474,7 +464,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			}
 
 			ver = iOSversion();
-
+console.log(ver+' '+ver[0]);
 			if (ver[0] < 10) {
 				//alert('This is running iOS '+ver);
 				$('#vid_hero').prepend('<div id="img_hero"></div>');
