@@ -70,7 +70,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="navbar" class="navbar-collapse collapse">
 					  <ul class="nav navbar-nav navbar-right">
 
-					    <li class="dropdown"><a href="#about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BOUT THE SHOW</a>
+					    <li class="dropdown"><a href="#about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT THE SHOW</a>
 					      <ul class="dropdown-menu">
 					        <li><a href="http://www.asdonline.com/lv/about/show-overview.shtml">Show Overview</a></li>
 					        <li><a href="http://www.asdonline.com/lv/about/product-categories.shtml">Product &amp; Buyer Categories</a></li>
@@ -463,13 +463,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				}
 			}
 
-			var ver = iOSversion();
-console.log(ver);
-			// if (ver[0] < 10) {
-			// 	//alert('This is running iOS '+ver);
-			// 	$('#vid_hero').prepend('<div id="img_hero"></div>');
-			// 	$('#bgvid').css('display', 'none');
-			// }
+			ver = iOSversion();
+
+			if (ver[0] < 10) {
+				//alert('This is running iOS '+ver);
+				$('#vid_hero').prepend('<div id="img_hero"></div>');
+				$('#bgvid').css('display', 'none');
+			}
 
 		});
     </script>
