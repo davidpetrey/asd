@@ -456,20 +456,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			    }        
 			});
 			
-			function iOSversion() {
-				if (/iP(hone|od|ad)/.test(navigator.platform)) {
-					var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
-					return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
-				}
-			}
+			// function iOSversion() {
+			// 	if (/iP(hone|od|ad)/.test(navigator.platform)) {
+			// 		var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+			// 		return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+			// 	}
+			// }
 
-			ver = iOSversion();
+			// ver = iOSversion();
 
-			if (ver[0] < 10) {
-				//alert('This is running iOS '+ver);
-				$('#vid_hero').prepend('<div id="img_hero"></div>');
-				$('#bgvid').css('display', 'none');
-			}
+			// if (ver[0] < 10) {
+			// 	//alert('This is running iOS '+ver);
+			// 	$('#vid_hero').prepend('<div id="img_hero"></div>');
+			// 	$('#bgvid').css('display', 'none');
+			// }
 
 		});
     </script>
